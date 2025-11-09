@@ -1,4 +1,5 @@
 import './App.css'
+import Banner from './components/Banner/Banner';
 
 import Navbar from './components/Navbar/Navbar';
 
@@ -8,12 +9,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <div className={"App"}>
+          <Navbar />
+          <Banner />
+        </div>
+
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}
           {/* <Route path="/itens" element={<Itens />} /> */}
           {/* <Route path="/cadastrar" element={<Cadastrar />} /> */}
         </Routes>
+
 
       </BrowserRouter>
     </>

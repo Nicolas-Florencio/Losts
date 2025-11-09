@@ -1,15 +1,43 @@
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2vh;
 }
 
 .logoNav {
-
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
 }
 .items {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    margin: auto;
 }
 .link {
+    color: #ffff;
+    text-decoration: none;
+    margin: 1px solid black;
+    background-color: gray;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    width: 12vw;
+}
+
+.link:hover {
+    transition: all 0.3s ease;
+    background-color: #ffff;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.profileIcon {
 
 }

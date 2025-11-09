@@ -13,3 +13,17 @@ body::before {
   filter: blur(1.5px); /* intensidade do blur */
   z-index: -1;
 }
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  color: #ffff;
+  text-align: center;
+  /* min-height: 100vh; */
+  border-radius: 0 0 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background: url('/background.png')
+    center
+    / cover
+    no-repeat;
+}
