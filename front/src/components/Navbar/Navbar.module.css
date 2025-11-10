@@ -23,7 +23,8 @@ nav {
     color: #ffff;
     text-decoration: none;
     margin: 1px solid black;
-    background-color: gray;
+    background-color: transparent;
+    border: 1px solid #fff;
     padding: 0.5rem;
     border-radius: 1.5rem;
     text-align: center;
@@ -32,10 +33,11 @@ nav {
 }
 
 .link:hover {
-    transition: all 0.3s ease;
-    background-color: #ffff;
-    color: gray;
-    border: 1px solid gray;
+    transition: background-color 0.3s ease;
+    background-color: rgba(80, 80, 80, 0.4);
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 500;
 }
 
 .profileIcon {
