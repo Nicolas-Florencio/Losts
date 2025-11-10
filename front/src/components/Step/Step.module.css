@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #0A5CA9;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    gap: 0.8rem;
+    pointer-events: none;
+}
+
+.container img {
+    border-radius: 0.8rem;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.textos span {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 80%;
+    }
+}

@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    background: url('/fundoBottom.png') center/cover no-repeat;
+}
+
+.container h1 {
+    margin-bottom: 5vh;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    gap: 1.4rem;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 1280px) {
+    .steps {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .steps {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 840px) {
+    .steps {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

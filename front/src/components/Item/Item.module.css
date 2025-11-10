@@ -4,7 +4,7 @@
 
   /* Borda gradiente */
   border: 2px solid transparent;
-  border-image: linear-gradient(to bottom, #fff, #63ADF2) 1;
+  border-image: linear-gradient(to bottom, #fff, #0A5CA9) 1;
   max-width: 30%;
   pointer-events: none;
 }
