@@ -20,7 +20,7 @@
 }
 
 .botoes {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -29,12 +29,53 @@
 
 .botao1 {
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: none;
-    background-color: #ff6f61;
+    background-color: rgba(128, 128, 128, 0.4);
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
+    width: 50%;
+    border: 1px solid #fff;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+.botao1:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  color: #000;
+  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+}
+
+.botao1:active {
+  transform: scale(0.97) translateY(0); /* faz ele voltar */
+  transition: transform 0.05s ease; 
+}
+
+.botao2 {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    border: 1px solid #000;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+.botao2:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  color: #000;
+  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+  border: 1px solid #fff;
+}
+
+.botao2:active {
+  transform: scale(0.97) translateY(0); /* faz ele voltar */
+  transition: transform 0.05s ease;
 }
 
 .imagem {
