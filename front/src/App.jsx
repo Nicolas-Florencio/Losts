@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './components/Banner/Banner';
+import LastItems from './components/LastItems/LastItems';
 
 import Navbar from './components/Navbar/Navbar';
 
@@ -13,7 +14,7 @@ function App() {
           <Navbar />
           <Banner />
         </div>
-
+        <LastItems />
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}
           {/* <Route path="/itens" element={<Itens />} /> */}
