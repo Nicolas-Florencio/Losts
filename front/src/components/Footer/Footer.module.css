@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
 
     background-color: #304D6D;
     color: #fff;
@@ -12,16 +13,33 @@
 
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    padding: 0 1rem;
 }
 
+/* --- telas médias: tablets e notebooks pequenos --- */
 @media (max-width: 980px) {
     .container {
-        height: 08vh;
+        height: 8vh;
+        font-size: 0.75rem;
+        gap: 0.8rem;
     }
 }
 
+/* --- telas pequenas: celulares na horizontal ou médios --- */
 @media (max-width: 720px) {
     .container {
         flex-direction: column;
+        height: auto;
+        padding: 0.8rem 1rem;
+        text-align: center;
+    }
+}
+
+/* --- telas muito pequenas: celulares compactos --- */
+@media (max-width: 480px) {
+    .container {
+        font-size: 0.7rem;
+        gap: 0.5rem;
+        border-radius: 0;
     }
 }
