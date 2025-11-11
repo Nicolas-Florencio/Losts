@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   background: url('/fundo.png') center / cover no-repeat fixed;
+  background-attachment: fixed;
 }
 
 
