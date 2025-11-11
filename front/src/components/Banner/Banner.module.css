@@ -125,7 +125,6 @@
 @media (max-width: 480px) {
   .banner {
     flex-direction: column;
-    padding: 1rem;
   }
   .titulo {
     font-size: 1.5rem;
