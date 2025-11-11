@@ -102,7 +102,7 @@
   .banner {
     flex-direction: column;
   }
-  .titulo {
+  .titulo, h1 {
     font-size: 1.8rem;
     text-align: center;
   }
@@ -125,6 +125,7 @@
 @media (max-width: 480px) {
   .banner {
     flex-direction: column;
+    margin-top: 1.8rem;
   }
   .titulo {
     font-size: 1.5rem;
