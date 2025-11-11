@@ -1,0 +1,71 @@
+.primary, .secondary {
+  text-decoration: none;
+}
+
+.primary {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.4);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    border: 1px solid #fff;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+.primary:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  color: #000;
+  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+}
+
+.primary:active {
+  transform: scale(0.97) translateY(0); /* faz ele voltar */
+  transition: transform 0.05s ease; 
+}
+
+.secondary {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    border: 1px solid #000;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  color: #000;
+  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+  border: 1px solid #fff;
+}
+
+.secondary:active {
+  transform: scale(0.97) translateY(0); /* faz ele voltar */
+  transition: transform 0.05s ease;
+}
+
+/* ----------- CELULAR MÉDIO (até 768px) ----------- */
+@media (max-width: 780px) {
+  .primary, .secondary {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* ----------- CELULAR PEQUENO (até 480px) ----------- */
+@media (max-width: 480px) {
+  .primary, .secondary {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.9rem;
+  }
+}

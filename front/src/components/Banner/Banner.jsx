@@ -1,17 +1,20 @@
 import styles from './Banner.module.css';
 
-export default function Banner() {
+import React from 'react';
+
+export default function Banner({imagem, conteudo, botoes}) {
     return (
         <>
             <div className={styles.banner}>
                 <div className={styles.container}>
-                    <h1 className={styles.titulo}>Encontre ou registre objetos perdidos na sua faculdade</h1>
+                    <h1 className={styles.titulo}>{conteudo}</h1>
                     <div className={styles.botoes}>
-                        <button className={styles.botao1}>Cadastrar Item</button>
-                        <button className={styles.botao2}>Ver Itens</button>
-                    </div>
+                        {botoes.map((item, index) => (
+                            React.cloneElement(item, { key: index })
+                        ))}
+                    </div> 
                 </div>
-                <img id={styles.imagem} src="/menina.png" alt="menina com caderno" />
+                {imagem}
             </div>
         </>
     )
