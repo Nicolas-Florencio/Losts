@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Tutorial from './components/Tutorial/Tutorial';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </div>
         <LastItems />
         <Tutorial />
+        <Footer />
 
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}

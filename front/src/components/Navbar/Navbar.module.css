@@ -40,6 +40,62 @@ nav {
     font-weight: 500;
 }
 
-.profileIcon {
+/* ----------- TABLET (até 1024px) ----------- */
+@media (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
+  .items {
+    gap: 0.8rem;
+  }
+
+  .link {
+    width: auto;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ----------- CELULAR MÉDIO (até 768px) ----------- */
+@media (max-width: 768px) {
+  nav {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logoNav {
+    height: 2.5rem;
+  }
+
+  .items {
+    gap: 0.7rem;
+    width: 80%;
+  }
+
+  .link {
+    width: 80%;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ----------- CELULAR PEQUENO (até 480px) ----------- */
+@media (max-width: 480px) {
+  .logoNav {
+    height: 2rem;
+  }
+
+  .link {
+    width: 90%;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .items {
+    gap: 0.6rem;
+  }
 }

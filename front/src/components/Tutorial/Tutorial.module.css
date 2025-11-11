@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 5vh;
+    padding-bottom: 5vh;
     padding-top: 5vh;
     background: url('/fundoBottom.png') center/cover no-repeat;
 }

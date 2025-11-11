@@ -40,3 +40,9 @@
 .local, .data {
     font-weight: 500;
 }
+
+@media (max-width: 780px) {
+    .container {
+        max-width: 40%;
+    }
+}
