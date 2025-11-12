@@ -1,15 +1,16 @@
-import Item from '../Item/Item';
+import React from 'react';
 import styles from './LastItems.module.css';
+import Item from '../Item/Item';
 
-export default function LastItems() {
+export default function LastItems({titulo, itens = []}) {
     return (
         <>
             <div className={styles.lastItems}>
-                <h1>Últimos Itens Cadastrados</h1>
+                <h1>{titulo}</h1>
                 <div className={styles.items}>
-                    <Item />
-                    <Item />
-                    <Item />
+                    {itens.map((item, index) => (
+                        <Item key={index} {...item} />
+                    ))}
                 </div>
             </div>
         </>

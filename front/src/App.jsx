@@ -20,6 +20,12 @@ function Home() {
    <Button tipo='secondary' conteudo='Ver Itens' to='/itens' />
   ];
 
+  const itens = [
+    { status: "Perdido", src: "/celular.png", alt: "Celular", nome: "Celular", local: "Sala 12", data: "12/03/2025" },
+    { status: "Perdido", src: "/celular.png", alt: "Celular", nome: "Celular", local: "Sala 12", data: "12/03/2025" },
+    { status: "Perdido", src: "/celular.png", alt: "Celular", nome: "Celular", local: "Sala 12", data: "12/03/2025" },
+  ];
+
   return (
     <>
       <div className="App">
@@ -30,7 +36,7 @@ function Home() {
           botoes={botoes}
         />
       </div>
-      <LastItems />
+      <LastItems titulo="Últimos Itens Cadastrados" itens={itens} />
       <Tutorial />
     </>
   );

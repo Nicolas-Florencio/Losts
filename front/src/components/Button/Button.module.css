@@ -1,4 +1,4 @@
-.primary, .secondary {
+.primary, .secondary, .tertiary {
   text-decoration: none;
 }
 
@@ -10,7 +10,7 @@
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     border: 1px solid #fff;
     transition: all 0.1s ease;
     transform: scale(1);
@@ -35,7 +35,7 @@
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     border: 1px solid #000;
     transition: all 0.1s ease;
     transform: scale(1);
@@ -51,6 +51,31 @@
 .secondary:active {
   transform: scale(0.97) translateY(0); /* faz ele voltar */
   transition: transform 0.05s ease;
+}
+
+.tertiary {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    border: 1px solid #fff;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+.tertiary:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  color: #000;
+  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+}
+
+.tertiary:active {
+  transform: scale(0.97) translateY(0); /* faz ele voltar */
+  transition: transform 0.05s ease; 
 }
 
 /* ----------- CELULAR MÉDIO (até 768px) ----------- */

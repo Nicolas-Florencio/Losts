@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 2rem;
+    margin-top: 5vh;
 }
 .container {
     display: flex;
@@ -10,7 +11,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
-    width: 100%;
+    width: 50%;
 }
 
 .titulo {
@@ -47,6 +48,10 @@
     gap: 1.5rem;
     padding-bottom: 1.4rem;
   }
+
+  .container {
+    width: 100%;
+  }
 }
 
 /* ----------- CELULAR MÉDIO (até 768px) ----------- */
@@ -70,6 +75,9 @@
     width: 100%;
     font-size: 0.95rem;
     padding: 0.8rem 1rem;
+  }
+  .container {
+    width: 80%;
   }
 }
 
