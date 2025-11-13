@@ -4,8 +4,7 @@
 
 .primary {
     padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: none;
+    border-radius: 0.5rem;
     background-color: rgba(128, 128, 128, 0.4);
     color: #fff;
     font-size: 1rem;
@@ -29,8 +28,7 @@
 
 .secondary {
     padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: none;
+    border-radius: 0.5rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     font-size: 1rem;
@@ -55,22 +53,22 @@
 
 .tertiary {
     padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: none;
+    border-radius: 0.5rem;
     background-color: rgba(0, 0, 0);
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     border: 1px solid #fff;
     transition: all 0.1s ease;
-    transform: scale(1);
+    text-align: center;
+    font-weight: 500;
 }
 
 .tertiary:hover {
   background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
   color: #000;
-  transform: scale(1.05) translateY(-2px); /* sobre o botao */
+  transform: scale(1.01) translateY(-2px); /* sobre o botao */
 }
 
 .tertiary:active {
