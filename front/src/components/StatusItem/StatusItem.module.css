@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0.4rem;
+}
+
+.titulo {
+    font-weight: 500;
+}

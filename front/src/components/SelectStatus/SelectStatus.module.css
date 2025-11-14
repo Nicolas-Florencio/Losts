@@ -1,0 +1,12 @@
+.select {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.select:focus {
+  border-color: #304D6D;
+  box-shadow: 0 0 4px rgba(107, 107, 255, 0.5);
+}

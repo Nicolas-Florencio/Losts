@@ -1,14 +1,20 @@
 import Button from '../Button/Button';
 import Input from '../Input/Input';
+import StatusItem from '../StatusItem/StatusItem';
 import styles from './Form.module.css';
 
-export default function Form({action, inputs = [], nomeBotao}) {
+export default function Form({action, inputs = [], nomeBotao, statusItem}) {
+    let componenteStatus = statusItem ? <StatusItem /> : "";
+
     return (
         <>
             <form className={styles.form} action={action} method="post">
                 {inputs.map((item, index) => (
                     <Input key={index} {...item} />  
                 ))}
+                {
+                    componenteStatus
+                }
 
                 <Button to={action} tipo="tertiary" conteudo={nomeBotao} />
             </form>
