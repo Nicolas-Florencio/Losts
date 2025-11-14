@@ -3,7 +3,7 @@ import Input from '../Input/Input';
 import StatusItem from '../StatusItem/StatusItem';
 import styles from './Form.module.css';
 
-export default function Form({action, inputs = [], nomeBotao, statusItem}) {
+export default function Form({action, inputs = [], nomeBotao, statusItem, apiForm}) {
     let componenteStatus = statusItem ? <StatusItem /> : "";
 
     return (
@@ -16,7 +16,7 @@ export default function Form({action, inputs = [], nomeBotao, statusItem}) {
                     componenteStatus
                 }
 
-                <Button to={action} tipo="tertiary" conteudo={nomeBotao} />
+                <Button tipo="tertiary" conteudo={nomeBotao} onClick={apiForm} />
             </form>
         </>
     )
