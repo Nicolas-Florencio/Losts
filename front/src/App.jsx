@@ -11,12 +11,12 @@ import Imagem from './components/Imagem/Imagem';
 
 // Páginas
 import Itens from './pages/Itens';
+import Cadastrar from './pages/Cadastrar';
 import Button from './components/Button/Button';
-// import Cadastrar from './pages/Cadastrar';
 
 function Home() {
   const botoes = [
-   <Button tipo='primary' conteudo='Cadastrar Item' />,
+   <Button tipo='primary' conteudo='Cadastrar Item' to = '/cadastrar' />,
    <Button tipo='secondary' conteudo='Ver Itens' to='/itens' />
   ];
 
@@ -48,7 +48,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/itens" element={<Itens />} />
-          {/* <Route path="/cadastrar" element={<Cadastrar />} /> */}
+          <Route path="/cadastrar" element={<Cadastrar />} />
         </Routes>
 
       <Footer />

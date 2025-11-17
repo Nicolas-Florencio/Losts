@@ -59,14 +59,15 @@
     font-size: 1rem;
     cursor: pointer;
     width: 100%;
-    border: 1px solid #fff;
     transition: all 0.1s ease;
     text-align: center;
     font-weight: 500;
+    border: transparent;
 }
 
 .tertiary:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* fica clarin */
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 1); /* fica clarin */
   color: #000;
   transform: scale(1.01) translateY(-2px); /* sobre o botao */
 }

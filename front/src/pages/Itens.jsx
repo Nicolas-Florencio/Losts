@@ -7,7 +7,7 @@ import BuscarItem from "../components/BuscaItem/BuscarItem";
 export default function Itens() {
   const botoes = [
     <Button tipo="primary" conteudo="Minha conta" />,
-    <Button tipo="secondary" conteudo="Registrar item" anchor="buscar-item" />,
+    <Button tipo="secondary" conteudo="Buscar Item" anchor="buscar-item" />,
   ];
 
   const itens = [

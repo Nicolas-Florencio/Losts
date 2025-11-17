@@ -20,3 +20,27 @@ body {
     / cover
     no-repeat;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background: url('/fundoBottom.png') center/cover no-repeat;
+}
+
+.titulo {
+  font-size: 3rem;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
