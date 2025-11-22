@@ -4,7 +4,6 @@
     gap: 0.4rem;
     width: 100%;
     padding: 0.4rem;
-    height: 10vh;
 }
 
 .label {
@@ -13,7 +12,20 @@
 }
 .input {
     height: 80%;
-    padding: 0.4rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
+    height: 4vh;
+}
+
+@media (max-width: 1024px) {
+  .input {
+    height: 4vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    height: 3vh;
+  }
 }

@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-around;
   padding: 0 2rem;
-  margin-top: 5vh;
   height: 34vh;
 }
 
@@ -38,6 +37,7 @@
   .banner {
     flex-direction: row;
     gap: 1rem;
+    height: 24vh;
   }
 
   .titulo {
@@ -49,7 +49,6 @@
   .botoes {
     width: 90%;
     gap: 1.5rem;
-    padding-bottom: 1.4rem;
   }
 
   .container {
@@ -66,8 +65,9 @@
 
   .titulo,
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
+    padding-top: 2rem;
   }
 
   .botoes {
@@ -75,13 +75,6 @@
     align-items: stretch;
     width: 100%;
     gap: 1rem;
-  }
-
-  .botao1,
-  .botao2 {
-    width: 100%;
-    font-size: 0.95rem;
-    padding: 0.8rem 1rem;
   }
 
   .container {
@@ -97,7 +90,7 @@
   }
 
   .titulo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .botoes {

@@ -16,7 +16,7 @@
 
 @media (max-width: 1024px) {
   .form {
-    max-width: 60%;
+    max-width: 90%;
   }
 }
 
@@ -28,6 +28,7 @@
 
 @media (max-width: 480px) {
   .form {
-    width: 100%;
+    padding: 1.4rem;
+    
   }
 }
