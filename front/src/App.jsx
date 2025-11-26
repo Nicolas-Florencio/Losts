@@ -8,11 +8,12 @@ import LastItems from './components/LastItems/LastItems';
 import Tutorial from './components/Tutorial/Tutorial';
 import Footer from './components/Footer/Footer';
 import Imagem from './components/Imagem/Imagem';
+import Button from './components/Button/Button';
 
 // Páginas
 import Itens from './pages/Itens';
 import Cadastrar from './pages/Cadastrar';
-import Button from './components/Button/Button';
+import Usuario from './pages/Usuario';
 
 function Home() {
   const botoes = [
@@ -49,6 +50,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/itens" element={<Itens />} />
           <Route path="/cadastrar" element={<Cadastrar />} />
+          <Route path="/conta" element={<Usuario />} />
         </Routes>
 
       <Footer />

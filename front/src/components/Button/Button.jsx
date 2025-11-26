@@ -3,7 +3,6 @@ import styles from './Button.module.css';
 
 export default function Button({ tipo, conteudo, to, onClick, anchor }) {
     
-    // 1. Se tiver rota, usa <Link>
     if (to) {
         return (
             <Link to={to} className={styles[tipo]}>
@@ -12,7 +11,6 @@ export default function Button({ tipo, conteudo, to, onClick, anchor }) {
         );
     }
 
-    // 2. Se tiver âncora, cria um scroll suave
     if (anchor) {
         return (
             <button 
@@ -20,9 +18,7 @@ export default function Button({ tipo, conteudo, to, onClick, anchor }) {
                 type="button"
                 onClick={() => {
                     const el = document.getElementById(anchor);
-                    if (el) {
-                        el.scrollIntoView({ behavior: "smooth" });
-                    }
+                    if (el) el.scrollIntoView({ behavior: "smooth" });
                 }}
             >
                 {conteudo}
@@ -30,11 +26,11 @@ export default function Button({ tipo, conteudo, to, onClick, anchor }) {
         );
     }
 
-    // 3. Se tiver função customizada (ex: consultar API)
+    // Caso esteja dentro de um form, ele vira submit
     return (
         <button
             className={styles[tipo]}
-            type="button"
+            type={onClick ? "button" : "submit"}  // ← chave da solução
             onClick={onClick}
         >
             {conteudo}
