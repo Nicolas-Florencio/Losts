@@ -59,6 +59,51 @@ app.post('/cadastrar', upload.single('arquivo'), async (req, res) => {
     }
 });
 
+app.get('/buscar', async (req, res) => {
+    try {
+        const sql = "SELECT * FROM objeto ORDER BY id_objeto DESC";
+        const [rows] = await connection.query(sql);
+        res.json(rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ erro: "Erro ao buscar objetos" });
+    }
+});
+
+app.get('/buscar/:limite', async (req, res) => {
+    try {
+        const limite = Number(req.params.limite);
+
+        const sql = "SELECT * FROM objeto ORDER BY id_objeto DESC LIMIT ?";
+        const [rows] = await connection.query(sql, [limite]);
+
+        res.json(rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ erro: "Erro ao buscar objetos" });
+    }
+});
+
+
+app.get('/buscar-nome', async (req, res) => {
+    try {
+        const nome = req.query.nome;
+
+        if (!nome) {
+            return res.status(400).json({ erro: "Nome não informado" });
+        }
+
+        const sql = "SELECT * FROM objeto WHERE nome_objeto LIKE ?";
+        const [rows] = await connection.query(sql, [`%${nome}%`]);
+
+        return res.json(rows);
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({ erro: "Erro ao buscar itens" });
+    }
+});
+
+
 
 
 app.listen(3000, () => {

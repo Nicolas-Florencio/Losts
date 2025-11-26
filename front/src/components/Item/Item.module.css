@@ -7,11 +7,12 @@
   border-image: linear-gradient(to bottom, #fff, #0A5CA9) 1;
   max-width: 30%;
   pointer-events: none;
+  height: 30vh;
+  margin-bottom: 4rem;
 }
 
 .foto {
-    max-height: 50vh;
-    width: auto;
+    
 }
 
 .status {

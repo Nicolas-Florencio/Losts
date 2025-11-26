@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
-import Banner from "../components/Banner/Banner";
-import Button from "../components/Button/Button";
+import { MdConstruction } from "react-icons/md";
 
 
 export default function Usuario() {
@@ -9,7 +8,9 @@ export default function Usuario() {
             <div className="App">
                 <Navbar />
             </div>
-            <p>Pagina</p>
+            <div className="manutencao">
+                <h3>Página em desenvolvimento <MdConstruction /> </h3>
+            </div>
         </>
     )
 }

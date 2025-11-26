@@ -1,5 +1,5 @@
 import Button from '../Button/Button';
-import Input from '../Input/Input';
+import Input from '../Footer/Input/Input';
 import StatusItem from '../StatusItem/StatusItem';
 import styles from './Form.module.css';
 
